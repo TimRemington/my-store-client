@@ -1,0 +1,67 @@
+.nav, div {
+  border: 1px solid green;
+}
+
+ul ~ p {
+  color: red;
+}
+
+ul li {
+  border: 1px solid blue;
+}
+
+html > body > ul > li {
+  font-weight: bold;
+}
+
+a {
+  text-style: none;
+}
+
+a:active, a:link, a:visited {
+  text-decoration: none;
+}
+
+.post {
+  background: green;
+}
+
+.post {
+  background: black;
+}
+
+.btn.btn-primary {
+  background: blue;
+}
+
+.btn {
+  background: grey;
+}
+
+.unicorn ul{
+  color: green;
+  font-stretch: semi-expanded;
+
+}
+
+a:hover {
+  text-style: underline;
+}
+
+.people, .colors{
+  font-style: italic;
+  color: red;
+}
+
+.box-demo{
+  background-color: yellow;
+  padding: 1em;
+  border: 20px dashed #000;
+  margin: 2em;
+  margin-top: 400px;
+}
+
+.logo{
+  float: right;
+  display: block;
+}

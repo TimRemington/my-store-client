@@ -1,0 +1,14 @@
+.square {
+  height: 40px;
+  width: 40px;
+  border: 1px solid grey;
+
+}
+
+.black{
+  background-color: black;
+}
+
+.board{
+  width: 400px;
+}
