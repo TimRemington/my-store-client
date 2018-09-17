@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Identity Generator</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css" media="screen,projection" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- My CSS-->
+  <link type="text/css" rel="stylesheet" href="index.css" media="screen,projection" />
+  <!-- My JS -->
+  <script src="index.js" charset="utf-8"></script>
+  <!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+</head>
+
+<body style="background-color:black; font-family: 'Russo One', sans-serif;">
+
+  <!-- Header with info -->
+  <div class="container-wrapper">
+    <div class="row valign-wrapper">
+      <div class="col s1 m1 l1">
+        <img src="paranoia.jpg" style="height:70px; padding-top:10px">
+      </div>
+      <div class="col s11 m11 l11 center-align valign">
+        <h4 style="color:lightgreen">Here is your new identity, agent, commit these details to memory:</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cool circuitry background image -->
+  <div class="parallax-container center valign-wrapper" style="height:60px">
+    <div class="parallax">
+      <img src="circuitback.jpg">
+    </div>
+  </div>
+
+  <!-- Card with PICTURE, NAME and BIO -->
+  <div class="row" style="background-color:black; padding-top:23px">
+    <div class="col s3 m3 l3">
+      <image class="left-align" src="person.jpg" style="height:300px">
+    </div>
+
+    <div class="col s9 m9 l9 left-align" style="color:limegreen">
+
+      <h3 style="bold; margin:0px" id="agentName">Name:</h3>
+      <h3 style="bold">Bio:</h3>
+      <font size='4'>
+        <p id="bio">Randomly generated Text</p>
+      </font>
+    </div>
+  </div>
+
+  <!-- Card with PERSONAL INFO, PREV EMPLOYMENT, HOBBIES and PAST HOMES -->
+  <div class="row" style="background-color:black">
+    <div class="col s3 m3 l3" style="color:limegreen">
+      <h5 style="text-weight:bold">Personal Info:</h5>
+      <ul>
+        <li id="age">Age: </li>
+        <li id="weight">Weight: </li>
+        <li id="height">Height: </li>
+        <li id="nationality">Nationality: </li>
+        <li id="zodiac">Zodiac Sign: </li>
+        <li id="favCol">Favorite Color: </li>
+        <li id="favAnimal"> Favorite Animal: </li>
+        <li id="bFF">Best Friend: </li>
+        <li>Current Pets: </li>
+        <ul style="margin-left:15px">
+          <li id="pet1">Test animal</li>
+          <li id="pet2">Test animal</li>
+        </ul>
+      </ul>
+    </div>
+    <div class="col s6 m6 l6" style="color:limegreen">
+      <h4 style="text-weight:bold; margin:0px">Previous Occupation:</h4>
+      <h5 id="oldjob"></h5>
+      <p id="companyinfo"></p>
+    </div>
+    <div class="col s3 m3 l3" style="color:limegreen">
+      <ul> Hobbies:
+        <li id="hob1">What?</li>
+        <li id="hob2">What?</li>
+        <li id="hob3">What?</li>
+        <li id="hob4">What?</li>
+      <ul>
+      <br></br>
+      <ul> Past Residences:
+        <li id="red1">What?</li>
+        <li id="red2">What?</li>
+        <li id="red3">What?</li>
+        <li id="red4">What?</li>
+      <ul>
+    </div>
+  </div>
+
+  <!-- Cool circuitry background image -->
+  <div class="parallax-container center valign-wrapper" style="height:40px">
+    <div class="parallax">
+      <img src="circuitback.jpg">
+    </div>
+  </div>
+
+  <!-- Card with PERSONAL INFO, PREV EMPLOYMENT, HOBBIES and PAST HOMES -->
+  <div class="row" style="background-color:black">
+    <div class="col s3 m3 l3" style="color:limegreen">
+      <ul>
+        <li>Bingo</li>
+        <li>Bongo</li>
+        <li>Bango</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Cool circuitry background image -->
+  <div class="parallax-container center valign-wrapper" style="height:120px">
+    <div class="parallax">
+      <img src="circuitback.jpg">
+    </div>
+  </div>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+</body>
+
+</html>
