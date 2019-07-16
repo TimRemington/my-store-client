@@ -23,6 +23,10 @@ class ProductDetail extends Component {
       })
   }
 
+  initiateStripeCheckout = async () => {
+    const stripe = window.Stripe('pk_test_pqWrWwWF3owFkqqHoGDaQr4T00oYgAi4Lc')
+  }
+
   render () {
     return(
       <div>
@@ -32,6 +36,7 @@ class ProductDetail extends Component {
             <img src={this.state.product.img_url} alt="product image"/>
             <p>{this.state.product.description}</p>
             <h3>Price: ${this.state.product.price / 100}.00</h3>
+            <button onClick={this.initiateStripeCheckout}>Purchase</button>
           </Card>
       </div>
     )
