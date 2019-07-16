@@ -25,15 +25,26 @@ class ProductDetail extends Component {
 
   initiateStripeCheckout = async () => {
     const stripe = window.Stripe('pk_test_pqWrWwWF3owFkqqHoGDaQr4T00oYgAi4Lc')
+    const { product } = this.state
+
+    const lineItem = {
+      name: product.name,
+      description: product.description,
+      images: [product.img_url],
+      amount: product.price,
+      currenct: 'usd',
+      quantity: 1
+    }
 
     try {
-      // Initiate checkout session to get session id
+      // In itiate checkout session to get session id
       const response = await fetch('http://localhost:4000/api/checkout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
-        }
+        },
+        body: JSON.stringify(lineItem)
       })
       const data = await response.json()
       const sessionId = data.session.id
