@@ -8,6 +8,7 @@ import Navigation from './components/Navigation'
 import Products from './components/ProductsList'
 import ProductDetail from './components/ProductDetail'
 import PaymentSuccess from './components/PaymentSuccess'
+import PaymentCancel from './components/PaymentCancel'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route exact path='/products' component={Products} />
         <Route path='/products/:id' component={ProductDetail} />
         <Route path='/success' component={PaymentSuccess} />
+        <Route path='/cancel' component={PaymentCancel} />
       </Switch>
     </Router>
   );
