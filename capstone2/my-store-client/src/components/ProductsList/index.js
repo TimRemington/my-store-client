@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
+import styles from './products-list.module.scss'
 
 import ProductCard from './ProductCard'
 
@@ -23,13 +24,23 @@ class Products extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
+      <div className={styles.container}>
+        <header>
           <h1>Welcome to Products List!</h1>
         </header>
-        {this.state.products.map(product => {
-          return <ProductCard key={product.id}/>
-        })}
+        <div className={styles.productsContainer}>
+          {this.state.products.map(product => {
+            return (
+              <ProductCard
+                key={product.id}
+                name={product.name}
+                description={product.description}
+                img_url={product.img_url}
+                price={product.price}
+              />
+            )
+          })}
+        </div>
       </div>
     )
   }

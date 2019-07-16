@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // Component Imports
 import Home from './components/Home'
 import Navigation from './components/Navigation'
-import Products from './components/Products'
+import Products from './components/ProductsList'
 
 function App() {
   return (
