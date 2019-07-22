@@ -9,10 +9,24 @@ const ExternalApi = () => {
   const { getTokenSilently } = useAuth0();
 
   const callApi = async () => {
+
+    // PROMISE CHAIN SYNTAX
+    // fetch('http://localhost:4000/api/external', {
+    //   headers: {
+    //     Authorization: `Bearer ${token}`
+    //   }
+    // })
+    //   .then(response => response.json())
+    //   .then(responseData => {
+    //     setShowResult(true)
+    //     setApiMessage(responseData)
+    //   })
+    //   .catch(error => console.error(error))
+
     try {
       const token = await getTokenSilently();
 
-      const response = await fetch("/api/external", {
+      const response = await fetch("http://localhost:4000/api/external", {
         headers: {
           Authorization: `Bearer ${token}`
         }
