@@ -25,7 +25,7 @@ function App() {
         <Route path='/products/:id' component={ProductDetail} />
         <Route path='/success' component={PaymentSuccess} />
         <Route path='/cancel' component={PaymentCancel} />
-        <Route path='/profile' component={Profile} />
+        <PrivateRoute path='/profile' component={Profile} />
         <PrivateRoute path='/test' component={ExternalApi} />
       </Switch>
     </Router>
